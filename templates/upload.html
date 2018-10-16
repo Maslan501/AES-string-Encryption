@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>Uploadfile</title>
+</head>
+<body>
+<form method=POST enctype=multipart/form-data action="{{ url_for('upload') }}">
+     <div class="form-group">
+      <label for="name">Key :</label>
+      <input type="text" class="form-control" id="key" name="key" placeholder="Enter key/password">
+      <br>
+      <label for="Random">Random No:</label>
+      <input type="Random" class="form-control" id="Random" name="Random" placeholder="Random no">
+      <br>
+	  <label for="stringfile">StringFile(Multiple of 16):</label>
+      <input type="stringfile" class="form-control" id="Stringfile" name="Stringfile" placeholder="Paste stringfile here">
+      <br>
+    <input type="submit">
+	</div>
+</form>
+</body>
+</html>
